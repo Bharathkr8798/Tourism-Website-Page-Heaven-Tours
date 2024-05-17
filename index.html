@@ -194,41 +194,54 @@
       <section class="tour-search" id="booking">
         <div class="container">
 
-          <form action="" class="tour-search-form">
-
+          <form action="https://api.web3forms.com/submit" method="POST" class="tour-search-form">
+            
             <div class="input-wrapper">
+              
               <label for="destination" class="input-label">State*</label>
-
-              <input type="text" name="destination" id="destination" required placeholder="Enter your state" class="input-field">
+              <input type="hidden" name="access_key" value="47dffc68-59a9-4261-91a0-d761dcefa08c">
+              <input type="text" name="State" id="destination" required placeholder="Enter your state" class="input-field" >
             </div>
 
             <div class="input-wrapper">
+              
               <label for="destination" class="input-label">Name*</label>
 
-              <input type="text" name="Pname" id="Pname" required placeholder="Enter your Name" class="input-field">
+              <input type="text" name="Name" id="Pname" required placeholder="Enter your Name" class="input-field">
             </div>
 
             <div class="input-wrapper">
+              
               <label for="people" class="input-label">Pax Number*</label>
 
-              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
+              <input type="number" name="No.of people" id="people" required placeholder="No.of People" class="input-field">
             </div>
 
             <div class="input-wrapper">
+              
+              <label for="Phoneno" class="input-label">Mobile Number*</label>
+
+              <input type="text" name="Phone No." id="Phoneno" required placeholder="Enter Mobile Number" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              
               <label for="checkin" class="input-label">Checkin Date*</label>
 
               <input type="date" name="checkin" id="checkin" required class="input-field">
             </div>
 
             <div class="input-wrapper">
+              
               <label for="checkout" class="input-label">Checkout Date*</label>
 
               <input type="date" name="checkout" id="checkout" required class="input-field">
             </div>
-
-            <button type="submit" class="btn btn-secondary" onclick="gotowhatsapp();" >Inquire now</button>
+            
+            <button type="submit" class="btn btn-secondary" >Inquire now</button>
 
           </form>
+          
 
         </div>
       </section>
@@ -1021,35 +1034,7 @@
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
-  <script>
-    function gotowhatsapp() {
-      var phoneno="+919434262060";
-    var destination = document.getElementById("destination").value;
-    var Pname= document.getElementById("Pname").value;
-    var people = document.getElementById("people").value;
-    var checkin = document.getElementById("checkin").value;
-    var checkout = document.getElementById("checkout").value;
-
-    var url = "https://wa.me/" + phoneno + "?text=" +
-    " State: " + 
-    destination + 
-    "%0a"+ 
-    "Name: " +
-    Pname +
-    "%0a"+ 
-    "No.of Pac :" + 
-    people + 
-    "%0a" +
-    "Checkin: "+ 
-    checkin + 
-    "%0a" +
-    "Checkout: "+
-    checkout; 
-
-    window.open(url, '_blank').focus();
-    }
-    
-  </script> 
+  
   
 
 
