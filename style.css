@@ -446,10 +446,17 @@
   .popular-list > li:not(:last-child) { margin-bottom: 30px; }
   
   .popular-card {
+    display: none;
     position: relative;
     overflow: hidden;
     border-radius: var(--radius-25);
     height: 430px;
+  }
+  .popular-card:nth-child(1),
+  .popular-card:nth-child(2),
+  .popular-card:nth-child(3)
+  {
+    display: inline-block;
   }
   
   .popular-card .card-img { height: 100%; }
@@ -498,6 +505,10 @@
   .popular-card :is(.card-subtitle, .card-title) > a { color: inherit; }
   
   .popular .btn { margin-inline: auto; }
+  
+
+  
+  
   
   /* Services */
 
