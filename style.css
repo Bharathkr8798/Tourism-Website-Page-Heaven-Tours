@@ -360,7 +360,7 @@
   \*-----------------------------------*/
   
   .hero {
-    background-image: url("sunsetpoint .jpg");
+    background-image: url("sunsetpoint\ .jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -508,66 +508,6 @@
   
 
   
-  
-  
-  /* Services */
-
-.text h2{
-    font-size: 40px;
-    font-weight: 650;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    line-height: 2;
-    text-align: center;
-}
-
-.rowitems{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
-    gap: 25px;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 30px ;
-    margin-right: 30px;
-    margin-bottom:50px ;
-}
-
-.container-box{
-    border: 1px solid #d3d3d3;
-    border-radius: 5px;
-    padding: 10px 10px;
-    transition: all 0.7s ease 0s;
-    cursor: pointer;
-}
-
-.container-image img{
-  margin: auto;
-  height: 100px;
-  width: 100px;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-.container-box h4{
-    font-size: 20px;
-    margin-bottom: 5px;
-    font-weight: 550;
-}
-
-.container-box p{
-    font-size: 16px;
-    color: #808080;
-}
-
-.container-box:hover{
-    transform: translateX(3px);
-    box-shadow: 5px 20px 50px rgb(12, 110, 229);
-    border: 1px solid transparent;
-    border-radius: 0px;
-}
-
   
   
   
@@ -887,7 +827,28 @@
   }
   
   .footer-bottom-link:is(:hover, :focus) { color: var(--white); }
-  
+  .footer .form-text2{
+    
+    text-align: justify;
+  }
+ .form-text2 .btn btn-secondary{
+  width: 20px;
+  padding: 0%;
+  padding-left: 0px;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+ } 
+.footer-brand .social-list{
+display: flex;
+align-items: flex-end;
+
+
+
+}
+
   
   
   
@@ -1468,3 +1429,64 @@ align-items: center;
   }
 
  
+  
+
+/* Services */
+
+.text h2{
+    font-size: 40px;
+    font-weight: 650;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 2;
+    text-align: center;
+}
+
+.rowitems{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30px ;
+    margin-right: 30px;
+    margin-bottom:50px ;
+    
+}
+
+.container-box{
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition: all 0.7s ease 0s;
+    cursor: pointer;
+}
+
+.container-image img{
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.container-box h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 550;
+}
+
+.container-box p{
+    font-size: 16px;
+    color: #808080;
+}
+
+.container-box:hover{
+    transform: translateX(3px);
+    box-shadow: 5px 20px 50px rgba(64, 134, 221, 0.895);
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
