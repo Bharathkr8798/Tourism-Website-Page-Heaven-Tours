@@ -256,7 +256,7 @@
 
 
 
-      <!-- 
+     <!-- 
         - #POPULAR
       -->
 
@@ -275,7 +275,7 @@
 
           <ul class="popular-list">
 
-            <li>
+            
               <div class="popular-card">
 
                 <figure class="card-img">
@@ -307,9 +307,9 @@
                 </div>
 
               </div>
-            </li>
+            
 
-            <li>
+            
               <div class="popular-card">
 
                 <figure class="card-img">
@@ -341,9 +341,9 @@
                 </div>
 
               </div>
-            </li>
+            
 
-            <li>
+            
               <div class="popular-card">
 
                 <figure class="card-img">
@@ -375,8 +375,107 @@
                 </div>
 
               </div>
-            </li>
-            <li>
+            
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="jail 4.jpg" alt="Limestone Cave" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Port Blair</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Cellular Jail Light & Sound Show </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Visit Cellular Jail and experience its history through the Light & Sound Show.
+                  </p>
+
+                </div>
+
+              </div>
+            
+
+            
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="sunset4.jpg" alt="Ross Island" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Port Blair</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Chidiya Tapu Beach</a>
+                  </h3>
+
+                  <p class="card-text">
+                    This place is a haven for bird watchers and a perfect spot for enjoying suns.
+                  </p>
+
+                </div>
+
+              </div>
+            
+
+            
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="carbin cove.jpg" alt="Corals" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Port Blair</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Corbyn's Cove Beach</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Sandy, palm-fringed beach with jet-ski rentals, lounge chairs & several casual eateries.
+                  </p>
+
+                </div>
+
+              </div>
+            
               <div class="popular-card">
 
                 <figure class="card-img">
@@ -408,9 +507,9 @@
                 </div>
 
               </div>
-            </li>
+            
 
-            <li>
+            
               <div class="popular-card">
 
                 <figure class="card-img">
@@ -443,9 +542,9 @@
                 </div>
 
               </div>
-            </li>
+            
 
-            <li>
+            
               <div class="popular-card">
 
                 <figure class="card-img">
@@ -478,17 +577,35 @@
                 </div>
 
               </div>
-            </li>
+
+              
+            
 
           </ul>
           
-
-          <button class="btn btn-primary"onclick="location.href='tel:+919434262060'" >Contact Us For More</button>
-
         </div>
+
+        <button class="btn btn-primary" id= "bttn">See More</button>
       </section>
+      <script>
+      let bttnBtn= document.querySelector('#bttn');
+      let currentItem= 3;
+
+      bttnBtn.onclick= () =>{
+        let boxes = [...document.querySelectorAll('.popular-card')];
+        for(var i = currentItem; i < currentItem + 3; i++){
+          boxes[i].style.display ='inline-block';
+        }
+        currentItem +=3;
+        
+        if(currentItem >= boxes.length)
+        {
+          bttnBtn.style.display = 'none';
+        }
+      }
 
 
+      </script>
       <!-- Services -->
 
 <section class="container" id="service">
