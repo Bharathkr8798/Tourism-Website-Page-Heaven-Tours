@@ -896,8 +896,6 @@ margin-bottom: 15px;
 .h3 {
   font-size: 1.25rem;
 }
-
-  
   
   
   /*-----------------------------------*\
@@ -1540,8 +1538,21 @@ align-items: flex-end;
   }
 
 
+@media (min-width: 992px) {
+/**
+   * ABOUT
+   */
 
-  
+  .about .container {
+    margin-right: 4px;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+    gap: 30px;
+    
+    
+  }
 
-
+  .about-content { margin-bottom: 10; }
+}
 
