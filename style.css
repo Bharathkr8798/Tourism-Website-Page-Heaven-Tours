@@ -365,7 +365,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 600px;
+  min-height: 700px;
   text-align: center;
   padding-top: 125px;
   overflow: hidden;
@@ -1602,6 +1602,7 @@ align-items: flex-end;
 
 
 \
+
 
 
 
