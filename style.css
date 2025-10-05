@@ -1263,7 +1263,7 @@ align-items: flex-end;
   
     .helpline-box .wrapper {
       display: block;
-      color: var(--white);
+      color: black;
       font-size: var(--fs-6);
     }
   
@@ -1540,6 +1540,7 @@ align-items: flex-end;
 
 
 \
+
 
 
 
